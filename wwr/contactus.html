@@ -5,6 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aqua Pulse Adventures | Contact Us</title>
   <link rel="stylesheet" href="styles/style.css">
+
+  <style>
+    
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    form ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    form li {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+
+    .button {
+      text-align: right;
+    }
+
+    
+    #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      
+      display: none;
+    }
+
+    .moveDown {
+      margin-top: 3em;
+    }
+  </style>
 </head>
 <body>
   <div id="content">
@@ -17,8 +70,37 @@
         <a href="faq.html">FAQ</a>
         <a href="site-plan-rafting.html">Site Plan</a>
         <a href="contactus.html">Contact Us</a>
-    </nav>
+      </nav>
+    </header>
 
+    <main>
+      <h1>Contact Us</h1>
+
+      
+      <div id="feedback"></div>
+
+      
+      <form action="https://example.com" method="post" class="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            
+            <input type="text" id="name" name="user_name" required>
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" required>
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" rows="5"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+    </main>
 
     <footer>
       <p>Aqua Pulse Adventures &copy; 2025 - Jena Hancock</p>
@@ -26,7 +108,7 @@
       <p><a href="contactus.html">Contact Us</a></p>
       <div class="social">
         <a href="https://facebook.com" target="_blank">
-          <img src="images/facebook.png" alt="fb icon">
+        <img src="images/facebook.png" alt="fb icon">
         </a>
         <a href="https://twitter.com" target="_blank">
           <img src="images/twitter.png" alt="twitter icon">
@@ -37,5 +119,18 @@
       </div>
     </footer>
   </div>
+
+    <script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+    formElement.addEventListener('submit', function(e) {
+        e.preventDefault();
+        feedbackElement.innerHTML =
+        'Hello ' + formElement.user_name.value +
+        '! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = "block";
+        document.body.classList.toggle('moveDown');
+    });
+  </script>
 </body>
 </html>
