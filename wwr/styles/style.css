@@ -392,12 +392,14 @@ main h1 {
 .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #3ba7bf;
-  background-color: #07344f;   
-  color: #f2dcc2;              
+  background-color: #07344f;
+  color: #f2dcc2;
+  font-family: "Shadows Into Light", "Candara", sans-serif; 
+  letter-spacing: 0.5px; 
 }
 
 .contact-form input::placeholder,
@@ -419,7 +421,7 @@ main h1 {
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   cursor: pointer;
   font-family: "Shadows Into Light", "Candara", sans-serif;  
   letter-spacing: 1px;  
@@ -431,7 +433,7 @@ main h1 {
 
 .contact-form label {
   color: #f2dcc2 !important;
-  font-size: 1rem; 
+  font-size: 1.5rem; 
 }
 
 footer {
