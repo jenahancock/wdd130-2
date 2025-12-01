@@ -316,7 +316,7 @@ footer a {
 /* tall left card */
 .portfolio-more,
 .portfolio-card {
-  background-color: #f7f7f7;
+  background-color: #555;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
