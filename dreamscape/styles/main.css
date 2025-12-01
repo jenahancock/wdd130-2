@@ -294,6 +294,7 @@ footer a {
 
 .portfolio-intro h2 {
   margin-bottom: 0.5rem;
+  color:#4E8087
 }
 
 .portfolio-intro p {
@@ -330,9 +331,6 @@ footer a {
 .portfolio-grid .portfolio-card:nth-of-type(1) {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding: 0;        /* flip-card will handle padding and background */
-  background: none;
-  box-shadow: none;
 }
 
 .portfolio-grid .portfolio-card:nth-of-type(2) {
@@ -409,7 +407,7 @@ footer a {
 
   .portfolio-more,
   .portfolio-card {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 /* =======================
