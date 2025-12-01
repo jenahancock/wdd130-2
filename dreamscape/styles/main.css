@@ -330,6 +330,9 @@ footer a {
 .portfolio-grid .portfolio-card:nth-of-type(1) {
   grid-column: 2 / 3;   /* Flyer Design, top middle */
   grid-row: 1 / 2;
+  padding: 0;           /* let the flip-card define padding/style */
+  background: none;
+  box-shadow: none;
 }
 
 .portfolio-grid .portfolio-card:nth-of-type(2) {
