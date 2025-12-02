@@ -21,20 +21,17 @@ body {
   line-height: 1.6;
 }
 
-/* Limit content width and center it */
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1.25rem 3rem;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
   font-family: "Playfair Display", serif;
   color: var(--primary-color);
 }
 
-/* Links */
 a {
   color: var(--secondary-color);
   text-decoration: none;
@@ -135,7 +132,6 @@ footer a {
   border-radius: 12px;
 }
 
-/* Service highlight cards on home */
 .service-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -157,7 +153,6 @@ footer a {
   color: #555;
 }
 
-/* Extra content block on Home page */
 .about-home {
   margin: 2.5rem 0;
   padding: 2rem 1.75rem;
@@ -203,7 +198,6 @@ footer a {
   color: #444;
 }
 
-/* Cards for detailed services */
 .service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -241,7 +235,6 @@ footer a {
   border-radius: 8px;
 }
 
-/* My Design Process section */
 .design-process {
   background-color: var(--accent2-color);
   padding: 1.75rem 1.5rem;
@@ -302,7 +295,6 @@ footer a {
   margin: 0 auto;
 }
 
-/* main grid like the wireframe */
 .portfolio-grid {
   max-width: 1100px;
   margin: 0 auto 3rem;
@@ -313,10 +305,9 @@ footer a {
   align-items: start;
 }
 
-/* tall left card */
 .portfolio-more,
 .portfolio-card {
-  background-color: #555;
+  background-color: #CEC5BA;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
@@ -324,22 +315,21 @@ footer a {
 
 .portfolio-more {
   grid-column: 1 / 2;
-  grid-row: 1 / 3;      /* spans both rows on the left */
+  grid-row: 1 / 3;      
 }
 
-/* TOP MIDDLE: wrapper for flip card */
 .portfolio-grid .portfolio-card:nth-of-type(1) {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .portfolio-grid .portfolio-card:nth-of-type(2) {
-  grid-column: 3 / 4;   /* Newsletter Layout, top right */
+  grid-column: 3 / 4;   
   grid-row: 1 / 2;
 }
 
 .portfolio-grid .portfolio-card:nth-of-type(3) {
-  grid-column: 2 / 4;   /* Branding Project, bottom spanning 2 columns */
+  grid-column: 2 / 4;   
   grid-row: 2 / 3;
 }
 
@@ -355,10 +345,10 @@ footer a {
 
 .flip-card {
   width: 100%;
-  height: 100%;              /* Fill the portfolio-card height */
+  height: 100%;              
   background-color: transparent;
   perspective: 1000px;
-  margin-top: 0.75rem;       /* Space between heading and card */
+  margin-top: 0.75rem;       
 }
 
 .flip-card-inner {
@@ -368,16 +358,14 @@ footer a {
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
   border-radius: 16px;
-  overflow: hidden;          /* Ensures image stays inside rounded corners */
+  overflow: hidden;          
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
 }
 
-/* Flip animation */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* FRONT & BACK shared settings */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -389,7 +377,6 @@ footer a {
   padding: 18px;
 }
 
-/* FRONT */
 .flip-card-front {
   background-color: #ffffff;
 }
@@ -401,7 +388,6 @@ footer a {
   border-radius: 12px;
 }
 
-/* BACK */
 .flip-card-back {
   background: linear-gradient(180deg, #234045, #4E8087);
   transform: rotateY(180deg);
@@ -452,7 +438,6 @@ footer a {
   color: #444;
 }
 
-/* Contact layout: form + image */
 .contact-form {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
